@@ -1,5 +1,6 @@
 import { Logo } from "./Logo";
 import { MainNavMenu } from "./MainNavMenu";
+import { ModeToggle } from "./ModeToggle";
 import { GithubLink } from "./socialLinks";
 
 export function MainNav() {
@@ -9,7 +10,14 @@ export function MainNav() {
         <Logo />
         <div className="flex items-center justify-end gap-2">
           <MainNavMenu />
-          <GithubLink />
+          <ul className="flex items-center justify-between gap-2">
+            <li>
+              <ModeToggle />
+            </li>
+            <li>
+              <GithubLink />
+            </li>
+          </ul>
         </div>
       </div>
     </div>
