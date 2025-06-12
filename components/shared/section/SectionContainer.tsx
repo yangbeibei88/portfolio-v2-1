@@ -1,12 +1,12 @@
 import { useNavItemScroll } from "@/components/hooks/useNavItemScroll";
 import { ReactNode, useEffect, useRef } from "react";
 
-type SectionObserverProps = {
+type SectionContainerProps = {
   id: string;
   children: ReactNode;
 };
 
-export function SectionObserver({ id, children }: SectionObserverProps) {
+export function SectionContainer({ id, children }: SectionContainerProps) {
   const ref = useRef<HTMLElement>(null);
   const { registerSection } = useNavItemScroll();
 
@@ -16,7 +16,7 @@ export function SectionObserver({ id, children }: SectionObserverProps) {
 
   return (
     <section id={id} ref={ref}>
-      {children}
+      <div className="container mx-auto px-5 py-4">{children}</div>
     </section>
   );
 }
