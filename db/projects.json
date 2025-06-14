@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": "ML Strength",
+    "technologies": ["HTML", "SASS", "JavaScript", "Leaflet"],
+    "images": [
+      { "position": 0, "image_path": "" },
+      { "position": 1, "image_path": "" },
+      { "position": 2, "image_path": "" }
+    ],
+    "demo_url": "https://ml-strength.beibeiyang.dev/",
+    "code_url": "https://github.com/yangbeibei88/ml-strength-fitness",
+    "description": "ML Strength is a fitness business that has multiple clubs and many gym classes. I developed this website using HTML, CSS/SASS, Javascript."
+  },
+  {
+    "id": 2,
+    "title": "T-Shirt Grind",
+    "technologies": [
+      "WordPress",
+      "PHP",
+      "JavaScript",
+      "MySQL",
+      "SASS",
+      "Bootstrap",
+      "PayPal"
+    ],
+    "images": [
+      { "position": 0, "image_path": "" },
+      { "position": 1, "image_path": "" },
+      { "position": 2, "image_path": "" }
+    ],
+    "demo_url": "https://tshirtgrind.beibeiyang.app/",
+    "code_url": "",
+    "description": "ML Strength is a fitness business that has multiple clubs and many gym classes. I developed this website using HTML, CSS/SASS, Javascript."
+  },
+  {
+    "id": 3,
+    "title": "The Mobile Hour",
+    "technologies": [
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "Bootstrap",
+      "MVC",
+      "OOP",
+      "CRUD"
+    ],
+    "images": [
+      { "position": 0, "image_path": "" },
+      { "position": 1, "image_path": "" },
+      { "position": 2, "image_path": "" }
+    ],
+    "demo_url": "https://themobilehour.beibeiyang.app/",
+    "code_url": "",
+    "description": "ML Strength is a fitness business that has multiple clubs and many gym classes. I developed this website using HTML, CSS/SASS, Javascript."
+  },
+  {
+    "id": 4,
+    "title": "High Street Gym",
+    "technologies": [
+      "NodeJS",
+      "ExpressJS",
+      "JavaScript",
+      "MySQL",
+      "TailwindCSS",
+      "Pug",
+      "MVC",
+      "OOP",
+      "CRUD"
+    ],
+    "images": [
+      { "position": 0, "image_path": "" },
+      { "position": 1, "image_path": "" },
+      { "position": 2, "image_path": "" }
+    ],
+    "demo_url": "https://highstreetgym.beibeiyang.dev/",
+    "code_url": "",
+    "description": "ML Strength is a fitness business that has multiple clubs and many gym classes. I developed this website using HTML, CSS/SASS, Javascript."
+  },
+  {
+    "id": 5,
+    "title": "TAFE Weather API",
+    "technologies": ["Deno", "MongoDB", "MVC", "OOP", "CRUD"],
+    "images": [
+      { "position": 0, "image_path": "" },
+      { "position": 1, "image_path": "" },
+      { "position": 2, "image_path": "" }
+    ],
+    "demo_url": "https://tafeweatherapi.beibeiyang.dev/",
+    "code_url": "",
+    "description": "ML Strength is a fitness business that has multiple clubs and many gym classes. I developed this website using HTML, CSS/SASS, Javascript."
+  }
+]

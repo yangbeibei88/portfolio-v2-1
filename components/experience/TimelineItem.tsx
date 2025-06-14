@@ -1,0 +1,52 @@
+import { ExperienceType } from "@/lib/types";
+import { Badge } from "@/components/ui/badge";
+
+type TimelineItemProps = Pick<
+  ExperienceType,
+  | "position"
+  | "org"
+  | "location"
+  | "description"
+  | "started_at"
+  | "ended_at"
+  | "type"
+>;
+
+export function TimelineItem({
+  type,
+  position,
+  org,
+  location,
+  description,
+  started_at,
+  ended_at,
+}: TimelineItemProps) {
+  const startDate = new Intl.DateTimeFormat("en-GB", {
+    year: "numeric",
+    month: "short",
+  }).format(new Date(started_at));
+  const endDate = ended_at
+    ? new Intl.DateTimeFormat("en-GB", {
+        year: "numeric",
+        month: "short",
+      }).format(new Date(ended_at))
+    : "present";
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.5fr_4fr] p-4">
+      <div className="">
+        <Badge>{type}</Badge>
+        <small className="font-mono">
+          {startDate} - {endDate}
+        </small>
+      </div>
+      <div className="border-l-4 border-indigo-500"></div>
+      <div className="">
+        <h3 className="text-lg">{position}</h3>
+        <h4 className="">
+          {org} | {location}
+        </h4>
+        <p>{description}</p>
+      </div>
+    </div>
+  );
+}

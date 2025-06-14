@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "org": "TAFE QLD",
+    "position": "Frontend and backend web development",
+    "type": "study",
+    "started_at": "2023-10-22",
+    "ended_at": "2025-02-28",
+    "description": "Focused on frontend and backend web development. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent erat lorem, mattis vitae odio ut, elementum ornare dolor. Suspendisse pharetra ipsum ac enim facilisis, at placerat sem dignissim. Maecenas a tellus nec mauris ultrices tincidunt quis sit amet magna. Donec non bibendum metus, sed molestie magna.",
+    "desc_array": null,
+    "location": "Gold Coast, QLD"
+  },
+  {
+    "id": 5,
+    "org": "Shandong Agricultural University",
+    "position": "Economics",
+    "type": "study",
+    "started_at": "2009-09-11",
+    "ended_at": "2011-06-28",
+    "description": "Study economics. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent erat lorem, mattis vitae odio ut, elementum ornare dolor. Suspendisse pharetra ipsum ac enim facilisis, at placerat sem dignissim. Maecenas a tellus nec mauris ultrices tincidunt quis sit amet magna. Donec non bibendum metus, sed molestie magna.",
+    "desc_array": null,
+    "location": "Qingdao, China"
+  },
+  {
+    "id": 2,
+    "org": "Austech Saw & Tooling",
+    "position": "Digital System Officer",
+    "type": "work",
+    "started_at": "2021-06-21",
+    "ended_at": "2023-07-11",
+    "description": "Worked as digital system officer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent erat lorem, mattis vitae odio ut, elementum ornare dolor. Suspendisse pharetra ipsum ac enim facilisis, at placerat sem dignissim. Maecenas a tellus nec mauris ultrices tincidunt quis sit amet magna. Donec non bibendum metus, sed molestie magna.",
+    "desc_array": null,
+    "location": "Gold Coast, QLD"
+  },
+  {
+    "id": 3,
+    "org": "La Trobe University",
+    "position": "Business Information System",
+    "type": "study",
+    "started_at": "2018-06-22",
+    "ended_at": "2020-09-11",
+    "description": "Study information system. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent erat lorem, mattis vitae odio ut, elementum ornare dolor. Suspendisse pharetra ipsum ac enim facilisis, at placerat sem dignissim. Maecenas a tellus nec mauris ultrices tincidunt quis sit amet magna. Donec non bibendum metus, sed molestie magna.",
+    "desc_array": null,
+    "location": "Melbourne, VIC"
+  },
+  {
+    "id": 4,
+    "org": "Reddot Electronics",
+    "position": "Digital System Developer",
+    "type": "work",
+    "started_at": "2011-08-28",
+    "ended_at": "2018-01-01",
+    "description": "Develop wordpress website and zoho system. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent erat lorem, mattis vitae odio ut, elementum ornare dolor. Suspendisse pharetra ipsum ac enim facilisis, at placerat sem dignissim. Maecenas a tellus nec mauris ultrices tincidunt quis sit amet magna. Donec non bibendum metus, sed molestie magna.",
+    "desc_array": null,
+    "location": "Shanghai, China"
+  }
+]
