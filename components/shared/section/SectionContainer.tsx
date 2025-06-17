@@ -1,3 +1,5 @@
+"use client";
+
 import { useNavItemScroll } from "@/components/hooks/useNavItemScroll";
 import { ReactNode, useEffect, useRef } from "react";
 

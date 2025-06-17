@@ -1,16 +1,20 @@
 import { HeaderHero } from "@/components/header/HeaderHero";
-import { MainNav } from "@/components/shared/topNav/MainNav";
 import { SkillsSection } from "@/components/skills/SkillsSection";
 import { ExperienceSection } from "@/components/experience/ExperienceSection";
+import { ProjectsSection } from "@/components/projects/ProjectsSection";
+import { getExperiences, getProjects, getSkills } from "./lib/db/getData";
 
-export default function Home() {
+export default async function HomePage() {
+  const skills = await getSkills();
+  const experiences = await getExperiences();
+  const projects = await getProjects();
   return (
-    <div className="min-h-dvh">
-      <MainNav />
+    <div className="w-full p-4 flex-1">
       <HeaderHero />
       <main>
-        <SkillsSection />
-        <ExperienceSection />
+        <SkillsSection skills={skills} />
+        <ExperienceSection experiences={experiences} />
+        <ProjectsSection projects={projects} />
       </main>
     </div>
   );

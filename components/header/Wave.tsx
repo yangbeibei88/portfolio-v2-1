@@ -1,3 +1,5 @@
+"use client";
+
 import { memo, MouseEventHandler } from "react";
 
 type TonMapType = {

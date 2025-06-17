@@ -1,12 +1,21 @@
 [
   {
     "id": 1,
-    "title": "ML Strength",
+    "project_name": "ML Strength",
     "technologies": ["HTML", "SASS", "JavaScript", "Leaflet"],
     "images": [
-      { "position": 0, "image_path": "" },
-      { "position": 1, "image_path": "" },
-      { "position": 2, "image_path": "" }
+      { "position": 0, "image_path": "/projects/ml-strength_ home.png" },
+      { "position": 1, "image_path": "/projects/ml-strength_about.png" },
+      { "position": 2, "image_path": "/projects/ml-strength_clubs.png" },
+      {
+        "position": 3,
+        "image_path": "/projects/ml-strength_clubid=1003&club=Chermside.png"
+      },
+      { "position": 4, "image_path": "/projects/ml-strength_classes.png" },
+      {
+        "position": 5,
+        "image_path": "/projects/ml-strength_classid=110&classname=StepMoves.png"
+      }
     ],
     "demo_url": "https://ml-strength.beibeiyang.dev/",
     "code_url": "https://github.com/yangbeibei88/ml-strength-fitness",
@@ -14,14 +23,14 @@
   },
   {
     "id": 2,
-    "title": "T-Shirt Grind",
+    "project_name": "T-Shirt Grind",
     "technologies": [
       "WordPress",
       "PHP",
       "JavaScript",
       "MySQL",
       "SASS",
-      "Bootstrap",
+      "BootStrap",
       "PayPal"
     ],
     "images": [
@@ -35,12 +44,12 @@
   },
   {
     "id": 3,
-    "title": "The Mobile Hour",
+    "project_name": "The Mobile Hour",
     "technologies": [
       "PHP",
       "MySQL",
       "JavaScript",
-      "Bootstrap",
+      "BootStrap",
       "MVC",
       "OOP",
       "CRUD"
@@ -56,7 +65,7 @@
   },
   {
     "id": 4,
-    "title": "High Street Gym",
+    "project_name": "High Street Gym",
     "technologies": [
       "NodeJS",
       "ExpressJS",
@@ -79,7 +88,7 @@
   },
   {
     "id": 5,
-    "title": "TAFE Weather API",
+    "project_name": "TAFE Weather API",
     "technologies": ["Deno", "MongoDB", "MVC", "OOP", "CRUD"],
     "images": [
       { "position": 0, "image_path": "" },

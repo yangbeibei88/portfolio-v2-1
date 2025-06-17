@@ -8,8 +8,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ProjectType, stackMap } from "@/lib/types";
+import { ProjectType } from "@/lib/types";
+import { stackMap } from "@/lib/utils/stackMap";
 import Link from "next/link";
+import Image from "next/image";
 import { BiLinkExternal, BiCodeAlt } from "react-icons/bi";
 
 type ProjectCardProps = Pick<
@@ -35,6 +37,12 @@ export function ProjectCard({
       <div className="flex flex-col lg:flex-row gap-6 rounded-2xl">
         <div className="lg:w-1/3">
           {/* The first image is the primary image, others are in image gallery */}
+          <Image
+            src={images[0].image_path || "/assets/image_placeholder_2.jpg"}
+            alt={`${project_name} image ${images[0].position}`}
+            width={640}
+            height={429}
+          />
         </div>
         <div className="flex flex-col lg:w-2/3">
           <CardHeader>
@@ -45,7 +53,12 @@ export function ProjectCard({
             <ul className="flex w-full flex-wrap gap-2">
               {technologies &&
                 technologies.map((s) => {
-                  const IconComponent = stackMap[s].icon;
+                  const tech = stackMap[s];
+                  if (!tech) {
+                    console.warn(`Unknown technology key: ${s}`);
+                    return null;
+                  }
+                  const IconComponent = tech.icon;
                   return (
                     <li
                       key={s}

@@ -3,6 +3,8 @@ import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/contexts/ThemeContext";
 import { NavItemScrollProvider } from "@/components/contexts/NavItemContext";
+import { MainNav } from "@/components/shared/topNav/MainNav";
+import { Footer } from "@/components/shared/footer/Footer";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -33,7 +35,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${roboto.className} antialiased`}>
         <ThemeProvider>
-          <NavItemScrollProvider>{children}</NavItemScrollProvider>
+          <NavItemScrollProvider>
+            <div className="flex flex-col h-screen">
+              <MainNav />
+              {children}
+              <Footer />
+            </div>
+          </NavItemScrollProvider>
         </ThemeProvider>
       </body>
     </html>

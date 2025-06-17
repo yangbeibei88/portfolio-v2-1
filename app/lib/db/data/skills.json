@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "skill_name": "Web Development",
+    "description": "Maecenas sodales orci in ex lobortis scelerisque. Ut nec felis ut elit tincidunt dignissim finibus sed ante. Nam facilisis risus ut libero laoreet, et congue dolor fermentum. Nam quis faucibus justo.",
+    "icon": "FaCode"
+  },
+  {
+    "id": 2,
+    "skill_name": "API development",
+    "description": "Maecenas sodales orci in ex lobortis scelerisque. Ut nec felis ut elit tincidunt dignissim finibus sed ante. Nam facilisis risus ut libero laoreet, et congue dolor fermentum. Nam quis faucibus justo.",
+    "icon": "AiFillApi"
+  },
+  {
+    "id": 3,
+    "skill_name": "Database Management",
+    "description": "Maecenas sodales orci in ex lobortis scelerisque. Ut nec felis ut elit tincidunt dignissim finibus sed ante. Nam facilisis risus ut libero laoreet, et congue dolor fermentum. Nam quis faucibus justo.",
+    "icon": "FaDatabase"
+  }
+]
