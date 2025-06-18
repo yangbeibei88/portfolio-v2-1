@@ -6,7 +6,7 @@ import { SkillList } from "./SkillList";
 export function SkillsSection({ skills }: { skills: SkillType[] }) {
   return (
     <SectionContainer id="skills">
-      <SectionTitle title="skills" />
+      <SectionTitle title="my skills" />
       <SkillList skills={skills} />
     </SectionContainer>
   );

@@ -18,6 +18,7 @@ type ProjectCardProps = Pick<
   ProjectType,
   | "project_name"
   | "description"
+  | "key_features"
   | "technologies"
   | "images"
   | "demo_url"
@@ -27,6 +28,7 @@ type ProjectCardProps = Pick<
 export function ProjectCard({
   project_name,
   description,
+  key_features,
   technologies,
   images,
   demo_url,
@@ -46,10 +48,17 @@ export function ProjectCard({
         </div>
         <div className="flex flex-col lg:w-2/3">
           <CardHeader>
-            <CardTitle>{project_name}</CardTitle>
+            <CardTitle>
+              <h3 className="text-2xl font-bold">{project_name}</h3>
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <p>{description}</p>
+            <h4 className="text-lg font-semibold">Key Features</h4>
+            <ul className="list-disc">
+              {key_features &&
+                key_features.map((k, idx) => <li key={idx}>{k}</li>)}
+            </ul>
             <ul className="flex w-full flex-wrap gap-2">
               {technologies &&
                 technologies.map((s) => {
@@ -62,10 +71,10 @@ export function ProjectCard({
                   return (
                     <li
                       key={s}
-                      className="flex items-center justify-center px-2 py-1"
+                      className="flex items-center justify-center px-2 py-1 text-xs"
                       style={{
                         border: `${stackMap[s]["color"]} 1px solid`,
-                        borderRadius: "5px",
+                        borderRadius: "20px",
                       }}
                     >
                       <IconComponent

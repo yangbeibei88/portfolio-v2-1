@@ -8,9 +8,9 @@ export function SkillList({ skills }: { skills: SkillType[] }) {
     icon: iconMap[s.icon],
   }));
   return (
-    <ul className="w-full flex flex-col gap-2 lg:flex-row items-center justify-center">
+    <ul className="w-full h-full flex flex-col gap-3 lg:flex-row items-stretch">
       {convertedSkills.map((s) => (
-        <li key={s.id} className="w-full">
+        <li key={s.id} className="flex flex-1">
           <SkillCard
             skill_name={s.skill_name}
             description={s.description}

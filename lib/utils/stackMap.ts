@@ -19,7 +19,12 @@ import {
   SiTypescript,
   SiReact,
   SiPug,
+  SiDocker,
+  SiSwagger,
+  SiOpenapiinitiative,
+  SiPostman,
 } from "react-icons/si";
+import { BsFiletypeXml } from "react-icons/bs";
 import { TbDatabaseEdit } from "react-icons/tb";
 import { GiThreePointedShuriken } from "react-icons/gi";
 import { MdDataObject } from "react-icons/md";
@@ -45,6 +50,7 @@ export const stackMap: StackMap = {
   },
   TypeScript: { name: "TypeScript", icon: SiTypescript },
   PHP: { name: "PHP", icon: SiPhp },
+  XML: { name: "XML", icon: BsFiletypeXml },
   ExpressJS: { name: "ExpressJS", icon: SiExpress },
   Leaflet: { name: "Leaflet", icon: SiLeaflet, color: "#82c041" },
   NestJS: { name: "NestJS", icon: SiNestjs },
@@ -54,6 +60,10 @@ export const stackMap: StackMap = {
   WordPress: { name: "WordPress", icon: SiWordpress },
   PayPal: { name: "PayPal", icon: FaCcPaypal },
   Pug: { name: "Pug", icon: SiPug },
+  Docker: { name: "Docker", icon: SiDocker },
+  Swagger: { name: "Docker", icon: SiSwagger },
+  OpenAPI: { name: "Docker", icon: SiOpenapiinitiative },
+  Postman: { name: "Docker", icon: SiPostman },
   CRUD: { name: "CRUD", icon: TbDatabaseEdit },
   MVC: { name: "MVC", icon: GiThreePointedShuriken },
   OOP: { name: "OOP", icon: MdDataObject },

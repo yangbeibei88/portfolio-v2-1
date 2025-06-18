@@ -2,19 +2,19 @@
   {
     "id": 1,
     "skill_name": "Web Development",
-    "description": "Maecenas sodales orci in ex lobortis scelerisque. Ut nec felis ut elit tincidunt dignissim finibus sed ante. Nam facilisis risus ut libero laoreet, et congue dolor fermentum. Nam quis faucibus justo.",
+    "description": "As a full-stack developer, I specialise in crafting responsive, dynamic, and intuitive user interfaces with React and TypeScript, paired with scalable backend runtime NodeJS/Deno. My development process emphasises clean architecture, reusable components, and performance optimization — resulting in applications that are as efficient as they are user-friendly.",
     "icon": "FaCode"
   },
   {
     "id": 2,
-    "skill_name": "API development",
-    "description": "Maecenas sodales orci in ex lobortis scelerisque. Ut nec felis ut elit tincidunt dignissim finibus sed ante. Nam facilisis risus ut libero laoreet, et congue dolor fermentum. Nam quis faucibus justo.",
-    "icon": "AiFillApi"
+    "skill_name": "Database Management",
+    "description": "With expertise in relational databases such as PostgreSQL and MySQL, as well as experience with NoSQL platforms like MongoDB, I design optimized database schemas and manage data efficiently to ensure consistency, reliability, and high performance in web applications.",
+    "icon": "FaDatabase"
   },
   {
     "id": 3,
-    "skill_name": "Database Management",
-    "description": "Maecenas sodales orci in ex lobortis scelerisque. Ut nec felis ut elit tincidunt dignissim finibus sed ante. Nam facilisis risus ut libero laoreet, et congue dolor fermentum. Nam quis faucibus justo.",
-    "icon": "FaDatabase"
+    "skill_name": "API development",
+    "description": "I design and develop RESTful APIs using NodeJS/Deno, ensuring seamless communication between the client and server. My APIs are robust, scalable, and thoroughly tested, forming the backbone of reliable and efficient web applications.",
+    "icon": "AiFillApi"
   }
 ]

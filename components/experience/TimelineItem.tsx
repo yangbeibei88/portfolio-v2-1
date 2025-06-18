@@ -7,6 +7,7 @@ type TimelineItemProps = Pick<
   | "org"
   | "location"
   | "description"
+  | "desc_array"
   | "started_at"
   | "ended_at"
   | "type"
@@ -18,6 +19,7 @@ export function TimelineItem({
   org,
   location,
   description,
+  desc_array,
   started_at,
   ended_at,
 }: TimelineItemProps) {
@@ -45,7 +47,14 @@ export function TimelineItem({
         <h4 className="">
           {org} | {location}
         </h4>
-        <p>{description}</p>
+        {type === "study" ? (
+          <p>{description}</p>
+        ) : (
+          <ul className="flex flex-col list-disc ml-0">
+            {desc_array?.length &&
+              desc_array.map((i, idx) => <li key={idx}>{i}</li>)}
+          </ul>
+        )}
       </div>
     </div>
   );

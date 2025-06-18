@@ -18,8 +18,15 @@
       }
     ],
     "demo_url": "https://ml-strength.beibeiyang.dev/",
-    "code_url": "https://github.com/yangbeibei88/ml-strength-fitness",
-    "description": "ML Strength is a fitness business that has multiple clubs and many gym classes. I developed this website using HTML, CSS/SASS, Javascript."
+    "codebase_url": "https://github.com/yangbeibei88/ml-strength-fitness",
+    "description": "ML Strength is a multi-location fitness business offering diverse gym classes. This project involved developing a dynamic website to showcase clubs, classes, and timetable.",
+    "key_features": [
+      "Built modular and maintainable CSS using SASS partials.",
+      "Integrated interactive geolocation maps with the Leaflet.js library.",
+      "Fetched dynamic data from local JSON files using Fetch API to populate pages.",
+      "Implemented PostCSS Autoprefixer for cross-browser CSS compatibility.",
+      "Ensured clean, standards-compliant code with HTML and CSS validation."
+    ]
   },
   {
     "id": 2,
@@ -39,8 +46,15 @@
       { "position": 2, "image_path": "" }
     ],
     "demo_url": "https://tshirtgrind.beibeiyang.app/",
-    "code_url": "",
-    "description": "ML Strength is a fitness business that has multiple clubs and many gym classes. I developed this website using HTML, CSS/SASS, Javascript."
+    "codebase_url": "",
+    "description": "An e-commerce platform built with WordPress for a custom t-shirt business. The site supports full online shopping functionalities and custom plugin development.",
+    "key_features": [
+      "Developed a fully custom WordPress theme from scratch.",
+      "Extensively customised WooCommerce for tailored product and checkout workflows.",
+      "Integrated PayPal sandbox environment for payment testing",
+      "Styled components using Bootstrap and SASS for responsive design.",
+      "Built a custom \"To Top Anywhere\" WordPress plugin for enhanced UX."
+    ]
   },
   {
     "id": 3,
@@ -60,8 +74,15 @@
       { "position": 2, "image_path": "" }
     ],
     "demo_url": "https://themobilehour.beibeiyang.app/",
-    "code_url": "",
-    "description": "ML Strength is a fitness business that has multiple clubs and many gym classes. I developed this website using HTML, CSS/SASS, Javascript."
+    "codebase_url": "https://github.com/yangbeibei88/tshirt-grind",
+    "description": "A dynamic PHP-based CRUD system for managing mobile phone product listings, categories, and user access via a custom-built admin panel.",
+    "key_features": [
+      "Developed a custom MVC framework from scratch using object-oriented PHP.",
+      "Connected to and managed data with a MySQL backend.",
+      "Implemented full CRUD operations for products, categories, and users.",
+      "Applied strong input validation and sanitization to prevent XSS and other security vulnerabilities.",
+      "Built with a focus on clean, modular backend architecture."
+    ]
   },
   {
     "id": 4,
@@ -73,6 +94,7 @@
       "MySQL",
       "TailwindCSS",
       "Pug",
+      "XML",
       "MVC",
       "OOP",
       "CRUD"
@@ -83,20 +105,49 @@
       { "position": 2, "image_path": "" }
     ],
     "demo_url": "https://highstreetgym.beibeiyang.dev/",
-    "code_url": "",
-    "description": "ML Strength is a fitness business that has multiple clubs and many gym classes. I developed this website using HTML, CSS/SASS, Javascript."
+    "codebase_url": "https://github.com/yangbeibei88/highstreetgym",
+    "description": "A full-stack gym management web application for handling class schedules, memberships, blogs, and more — with secure data processing and robust admin tools.",
+    "key_features": [
+      "JWT-based authentication and secure authorization middleware.",
+      "Full CRUD capabilities for classes, blogs, timetables, and comments.",
+      "Admin users can bulk upload class schedules via XML with XSD validation.",
+      "Form and file input validated using express-validator for security.",
+      "Used Multer for handling file and image uploads.",
+      "Dynamic frontend built with Webpack and modular JS import chunks.",
+      "Structured with MVC pattern for maintainable, scalable code."
+    ]
   },
   {
     "id": 5,
-    "project_name": "TAFE Weather API",
-    "technologies": ["Deno", "MongoDB", "MVC", "OOP", "CRUD"],
+    "project_name": "TAFE Weather REST API",
+    "technologies": [
+      "TypeScript",
+      "Deno",
+      "ExpressJS",
+      "MongoDB",
+      "Docker",
+      "Swagger",
+      "OpenAPI",
+      "Postman",
+      "MVC",
+      "CRUD"
+    ],
     "images": [
       { "position": 0, "image_path": "" },
       { "position": 1, "image_path": "" },
       { "position": 2, "image_path": "" }
     ],
     "demo_url": "https://tafeweatherapi.beibeiyang.dev/",
-    "code_url": "",
-    "description": "ML Strength is a fitness business that has multiple clubs and many gym classes. I developed this website using HTML, CSS/SASS, Javascript."
+    "codebase_url": "https://github.com/yangbeibei88/tafe-weather-rest-api",
+    "description": "A robust, TypeScript-based REST API built on Deno and Express, with MongoDB as the backend — designed for weather data storage, validation, and retrieval.",
+    "key_features": [
+      "uilt with Deno 2.1.0, using native TypeScript for type-safe backend logic.",
+      "Integrated with MongoDB using the official NodeJS driver.",
+      "Implemented persistent JSON schema validation at the database level.",
+      "Defined compound indexes to optimize query and aggregation performance.",
+      "Set up MongoDB Atlas triggers for reactive data handling.",
+      "JWT authentication and custom middleware for secure endpoints.",
+      "API documented with OpenAPI 3.1.0 and testable via Swagger UI."
+    ]
   }
 ]

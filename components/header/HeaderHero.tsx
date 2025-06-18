@@ -6,16 +6,17 @@ export function HeaderHero() {
     <SectionContainer id="portfolio-hero">
       <div className="w-2/3" id="short_intro">
         <WaveGreeting />
-        <h2>
-          I am a fullstack TypeScript developer passionate about TypeSafe and
-          performant code.
-        </h2>
+        <h2>Fullstack Web Developer (focusing on TypeScript and React)</h2>
         <hr />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-          consectetur dolore, voluptatibus delectus eum deserunt mollitia dicta
-          sint, et officiis at harum, ullam distinctio id? Quo dolor fuga optio
-          inventore!
+          I am a fullstack TypeScript developer passionate about TypeSafe and
+          performant code. I'm a passionate full-stack web developer
+          specialising in creating robust, scalable, and database-driven
+          applications. Leveraging TypeScript, React, NodeJS, and
+          relational/NoSQL databases, I build solutions where the database
+          serves as a reliable single source of truth. With experience spanning
+          business systems, custom applications, and modern web technologies, I
+          bring efficiency and practicality to every project I work on.
         </p>
       </div>
     </SectionContainer>

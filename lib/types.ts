@@ -26,9 +26,14 @@ export type StackKey =
   | "WordPress"
   | "PayPal"
   | "Pug"
+  | "XML"
   | "MVC"
   | "OOP"
-  | "CRUD";
+  | "CRUD"
+  | "Docker"
+  | "Swagger"
+  | "OpenAPI"
+  | "Postman";
 
 export type ExperienceType = {
   id: number;
@@ -47,6 +52,7 @@ export type ProjectType = {
   project_name: string;
   technologies: StackKey[] | null;
   description: string | null;
+  key_features: string[] | null;
   images: { position: number; image_path: string }[];
   demo_url: string | null;
   codebase_url: string | null;

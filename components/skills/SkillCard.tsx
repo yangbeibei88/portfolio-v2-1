@@ -20,12 +20,12 @@ export function SkillCard({
   icon: Icon,
 }: SkillCardProps) {
   return (
-    <Card className="w-full">
-      <CardHeader>
-        <Icon size={48} />
-        <CardTitle>{skill_name}</CardTitle>
-        <CardContent>{description}</CardContent>
+    <Card className="flex flex-col flex-1">
+      <CardHeader className="flex flex-col items-center justify-center gap-3">
+        <Icon size={36} />
+        <CardTitle className="text-2xl">{skill_name}</CardTitle>
       </CardHeader>
+      <CardContent className="flex-1">{description}</CardContent>
     </Card>
   );
 }

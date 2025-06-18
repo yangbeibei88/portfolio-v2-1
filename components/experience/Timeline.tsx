@@ -22,6 +22,7 @@ export function Timeline({ experiences }: { experiences: ExperienceType[] }) {
               org={item.org}
               location={item.location}
               description={item.description}
+              desc_array={item.desc_array}
               started_at={item.started_at}
               ended_at={item.ended_at}
               type={item.type}
