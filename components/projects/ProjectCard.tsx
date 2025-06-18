@@ -13,6 +13,7 @@ import { stackMap } from "@/lib/utils/stackMap";
 import Link from "next/link";
 import Image from "next/image";
 import { BiLinkExternal, BiCodeAlt } from "react-icons/bi";
+import ProjectImagesCarousel from "./ProjectImagesCarousel";
 
 type ProjectCardProps = Pick<
   ProjectType,
@@ -39,12 +40,13 @@ export function ProjectCard({
       <div className="flex flex-col lg:flex-row gap-6 rounded-2xl">
         <div className="lg:w-1/3">
           {/* The first image is the primary image, others are in image gallery */}
-          <Image
+          {/* <Image
             src={images[0].image_path || "/assets/image_placeholder_2.jpg"}
             alt={`${project_name} image ${images[0].position}`}
             width={640}
             height={429}
-          />
+          /> */}
+          <ProjectImagesCarousel project_name={project_name} images={images} />
         </div>
         <div className="flex flex-col lg:w-2/3">
           <CardHeader>

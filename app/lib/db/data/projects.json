@@ -43,7 +43,8 @@
     "images": [
       { "position": 0, "image_path": "" },
       { "position": 1, "image_path": "" },
-      { "position": 2, "image_path": "" }
+      { "position": 2, "image_path": "" },
+      { "position": 3, "image_path": "" }
     ],
     "demo_url": "https://tshirtgrind.beibeiyang.app/",
     "codebase_url": "",
