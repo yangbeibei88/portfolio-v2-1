@@ -6,32 +6,32 @@
     "images": [
       {
         "position": 0,
-        "image_path": "/projects/ml-strength_ home.png",
+        "image_path": "/projects/mlstrength/ml-strength_ home.png",
         "image_desc": "Home page"
       },
       {
         "position": 1,
-        "image_path": "/projects/ml-strength_about.png",
+        "image_path": "/projects/mlstrength/ml-strength_about.png",
         "image_desc": "About page"
       },
       {
         "position": 2,
-        "image_path": "/projects/ml-strength_clubs.png",
+        "image_path": "/projects/mlstrength/ml-strength_clubs.png",
         "image_desc": "Club list page with search and map"
       },
       {
         "position": 3,
-        "image_path": "/projects/ml-strength_clubid=1003&club=Chermside.png",
+        "image_path": "/projects/mlstrength/ml-strength_clubid=1003&club=Chermside.png",
         "image_desc": "Club details page with timetable"
       },
       {
         "position": 4,
-        "image_path": "/projects/ml-strength_classes.png",
+        "image_path": "/projects/mlstrength/ml-strength_classes.png",
         "image_desc": "Class list page with filter"
       },
       {
         "position": 5,
-        "image_path": "/projects/ml-strength_classid=110&classname=StepMoves.png",
+        "image_path": "/projects/mlstrength/ml-strength_classid=110&classname=StepMoves.png",
         "image_desc": "Class details page with timetable"
       }
     ],
@@ -119,9 +119,61 @@
       "CRUD"
     ],
     "images": [
-      { "position": 0, "image_path": "" },
-      { "position": 1, "image_path": "" },
-      { "position": 2, "image_path": "" }
+      {
+        "position": 0,
+        "image_path": "/projects/themobilehour/themobilehour.beibeiyang.app_home.png",
+        "image_desc": "Home page"
+      },
+      {
+        "position": 1,
+        "image_path": "/projects/themobilehour/themobilehour.beibeiyang.app_products.png",
+        "image_desc": "Products page"
+      },
+      {
+        "position": 2,
+        "image_path": "/projects/themobilehour/themobilehour.beibeiyang.app_products_1.png",
+        "image_desc": "Product details page"
+      },
+      {
+        "position": 3,
+        "image_path": "/projects/themobilehour/themobilehour.beibeiyang.app_admin_user-management.png",
+        "image_desc": "Admin user management page (Super admin panel)"
+      },
+      {
+        "position": 4,
+        "image_path": "/projects/themobilehour/themobilehour.beibeiyang.app_admin_product-management.png",
+        "image_desc": "Product management page (admin panel)"
+      },
+      {
+        "position": 5,
+        "image_path": "/projects/themobilehour/themobilehour.beibeiyang.app_admin_product-management_show_1.png",
+        "image_desc": "Product details view page (admin panel)"
+      },
+      {
+        "position": 6,
+        "image_path": "/projects/themobilehour/themobilehour.beibeiyang.app_admin_product-management_edit_1.png",
+        "image_desc": "Product details edit page (admin panel)"
+      },
+      {
+        "position": 7,
+        "image_path": "/projects/themobilehour/themobilehour.beibeiyang.app_admin_category-management.png",
+        "image_desc": "Category management page (admin panel)"
+      },
+      {
+        "position": 8,
+        "image_path": "/projects/themobilehour/themobilehour.beibeiyang.app_admin_category-management_show_1.png",
+        "image_desc": "Category details view page (admin panel)"
+      },
+      {
+        "position": 9,
+        "image_path": "/projects/themobilehour/themobilehour.beibeiyang.app_admin_category-management_edit_1.png",
+        "image_desc": "Category details edit page (admin panel)"
+      },
+      {
+        "position": 10,
+        "image_path": "/projects/themobilehour/themobilehour.beibeiyang.app_admin_changelogs_filter_admin_user=2&product_term=SGZF5256MT&dateFrom=&dateTo=.png",
+        "image_desc": "Changelog page (admin panel)"
+      }
     ],
     "demo_url": "https://themobilehour.beibeiyang.app/",
     "codebase_url": "https://github.com/yangbeibei88/tshirt-grind",
@@ -150,9 +202,61 @@
       "CRUD"
     ],
     "images": [
-      { "position": 0, "image_path": "" },
-      { "position": 1, "image_path": "" },
-      { "position": 2, "image_path": "" }
+      {
+        "position": 0,
+        "image_path": "/projects/highstreetgym/highstreetgym.beibeiyang.dev_.png",
+        "image_desc": "Home page (list all classes)"
+      },
+      {
+        "position": 1,
+        "image_path": "/projects/highstreetgym/highstreetgym.beibeiyang.dev_classes_1.png",
+        "image_desc": "Class details page"
+      },
+      {
+        "position": 2,
+        "image_path": "/projects/highstreetgym/highstreetgym.beibeiyang.dev_timetable.png",
+        "image_desc": "Timetable page"
+      },
+      {
+        "position": 3,
+        "image_path": "/projects/highstreetgym/highstreetgym.beibeiyang.dev_blog.png",
+        "image_desc": "Blog page with filters"
+      },
+      {
+        "position": 4,
+        "image_path": "/projects/highstreetgym/highstreetgym.beibeiyang.dev_blog_9.png",
+        "image_desc": "Article page with comments"
+      },
+      {
+        "position": 5,
+        "image_path": "/projects/highstreetgym/highstreetgym.beibeiyang.dev_auth_account_.png",
+        "image_desc": "Account dashboard"
+      },
+      {
+        "position": 6,
+        "image_path": "/projects/highstreetgym/highstreetgym.beibeiyang.dev_auth_account_booking-confirmation_27.png",
+        "image_desc": "Booking confirmation page"
+      },
+      {
+        "position": 7,
+        "image_path": "/projects/highstreetgym/highstreetgym.beibeiyang.dev_auth_account_manage-bookings.png",
+        "image_desc": "Managing bookings (Admin panel)"
+      },
+      {
+        "position": 8,
+        "image_path": "/projects/highstreetgym/highstreetgym.beibeiyang.dev_auth_admin_data-import.png",
+        "image_desc": "XML data import (Admin panel)"
+      },
+      {
+        "position": 9,
+        "image_path": "/projects/highstreetgym/highstreetgym.beibeiyang.dev_auth_account_my-profile.png",
+        "image_desc": "Account profile update (Admin panel)"
+      },
+      {
+        "position": 10,
+        "image_path": "/projects/highstreetgym/highstreetgym.beibeiyang.dev_auth_account_articleForm_4_edit.png",
+        "image_desc": "Article Form Edit"
+      }
     ],
     "demo_url": "https://highstreetgym.beibeiyang.dev/",
     "codebase_url": "https://github.com/yangbeibei88/highstreetgym",
@@ -183,11 +287,13 @@
       "CRUD"
     ],
     "images": [
-      { "position": 0, "image_path": "" },
-      { "position": 1, "image_path": "" },
-      { "position": 2, "image_path": "" }
+      {
+        "position": 0,
+        "image_path": "/projects/tafeweatherapi/tafeweatherapi.beibeiyang.dev_api-docs_.png",
+        "image_desc": "TAFE Weather API Documentation"
+      }
     ],
-    "demo_url": "https://tafeweatherapi.beibeiyang.dev/",
+    "demo_url": "https://tafeweatherapi.beibeiyang.dev/api-docs",
     "codebase_url": "https://github.com/yangbeibei88/tafe-weather-rest-api",
     "description": "A robust, TypeScript-based REST API built on Deno and Express, with MongoDB as the backend — designed for weather data storage, validation, and retrieval.",
     "key_features": [

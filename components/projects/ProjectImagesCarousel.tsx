@@ -118,7 +118,7 @@ ProjectImagesCarouselProps) {
             {images.map((img) => (
               <CarouselItem
                 key={img.position}
-                className="flex flex-col justify-center items-start"
+                className="w-full max-h-[300px] flex justify-center items-start"
               >
                 <Image
                   width={1024}
@@ -129,14 +129,14 @@ ProjectImagesCarouselProps) {
                     `${project_name} image`
                   }
                   priority={true}
-                  className="w-full max-h-min object-contain cursor-zoom-in"
+                  className="w-full max-h-full object-contain cursor-zoom-in"
                   onClick={() => setIsDialogOpen(true)}
                 />
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-4 opacity-50" />
-          <CarouselNext className="right-4 opacity-50" />
+          <CarouselPrevious className="left-2 opacity-50" />
+          <CarouselNext className="right-2 opacity-50" />
         </Carousel>
       </div>
       {/* Carousel thumbnail navigation */}
