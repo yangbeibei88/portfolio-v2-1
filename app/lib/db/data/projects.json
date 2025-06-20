@@ -4,17 +4,35 @@
     "project_name": "ML Strength",
     "technologies": ["HTML", "SASS", "JavaScript", "Leaflet"],
     "images": [
-      { "position": 0, "image_path": "/projects/ml-strength_ home.png" },
-      { "position": 1, "image_path": "/projects/ml-strength_about.png" },
-      { "position": 2, "image_path": "/projects/ml-strength_clubs.png" },
+      {
+        "position": 0,
+        "image_path": "/projects/ml-strength_ home.png",
+        "image_desc": "Home page"
+      },
+      {
+        "position": 1,
+        "image_path": "/projects/ml-strength_about.png",
+        "image_desc": "About page"
+      },
+      {
+        "position": 2,
+        "image_path": "/projects/ml-strength_clubs.png",
+        "image_desc": "Club list page with search and map"
+      },
       {
         "position": 3,
-        "image_path": "/projects/ml-strength_clubid=1003&club=Chermside.png"
+        "image_path": "/projects/ml-strength_clubid=1003&club=Chermside.png",
+        "image_desc": "Club details page with timetable"
       },
-      { "position": 4, "image_path": "/projects/ml-strength_classes.png" },
+      {
+        "position": 4,
+        "image_path": "/projects/ml-strength_classes.png",
+        "image_desc": "Class list page with filter"
+      },
       {
         "position": 5,
-        "image_path": "/projects/ml-strength_classid=110&classname=StepMoves.png"
+        "image_path": "/projects/ml-strength_classid=110&classname=StepMoves.png",
+        "image_desc": "Class details page with timetable"
       }
     ],
     "demo_url": "https://ml-strength.beibeiyang.dev/",
@@ -41,10 +59,41 @@
       "PayPal"
     ],
     "images": [
-      { "position": 0, "image_path": "" },
-      { "position": 1, "image_path": "" },
-      { "position": 2, "image_path": "" },
-      { "position": 3, "image_path": "" }
+      {
+        "position": 0,
+        "image_path": "/projects/tshirtgrind/tshirtgrind.beibeiyang.app_.png",
+        "image_desc": "Home page"
+      },
+      {
+        "position": 1,
+        "image_path": "/projects/tshirtgrind/tshirtgrind.beibeiyang.app_shop_.png",
+        "image_desc": "Shop page"
+      },
+      {
+        "position": 2,
+        "image_path": "/projects/tshirtgrind/tshirtgrind.beibeiyang.app_product_cosmic-dreamer-t-shirt_.png",
+        "image_desc": "Product details page"
+      },
+      {
+        "position": 3,
+        "image_path": "/projects/tshirtgrind/tshirtgrind.beibeiyang.app_cart_.png",
+        "image_desc": "Cart page"
+      },
+      {
+        "position": 4,
+        "image_path": "/projects/tshirtgrind/tshirtgrind.beibeiyang.app_checkout_.png",
+        "image_desc": "Checkout page"
+      },
+      {
+        "position": 5,
+        "image_path": "/projects/tshirtgrind/tshirtgrind.beibeiyang.app_checkout_order-received_263__key=wc_order_8LMt06QRiIr9A.png",
+        "image_desc": "Checkout order received page"
+      },
+      {
+        "position": 6,
+        "image_path": "/projects/tshirtgrind/tshirtgrind.beibeiyang.app_my-account_orders_.png",
+        "image_desc": "Account orders page"
+      }
     ],
     "demo_url": "https://tshirtgrind.beibeiyang.app/",
     "codebase_url": "",
@@ -142,7 +191,7 @@
     "codebase_url": "https://github.com/yangbeibei88/tafe-weather-rest-api",
     "description": "A robust, TypeScript-based REST API built on Deno and Express, with MongoDB as the backend — designed for weather data storage, validation, and retrieval.",
     "key_features": [
-      "uilt with Deno 2.1.0, using native TypeScript for type-safe backend logic.",
+      "Built with Deno 2.1.0, using native TypeScript for type-safe backend logic.",
       "Integrated with MongoDB using the official NodeJS driver.",
       "Implemented persistent JSON schema validation at the database level.",
       "Defined compound indexes to optimize query and aggregation performance.",

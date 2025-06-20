@@ -53,7 +53,7 @@ export type ProjectType = {
   technologies: StackKey[] | null;
   description: string | null;
   key_features: string[] | null;
-  images: { position: number; image_path: string }[];
+  images: { position: number; image_path: string; image_desc: string }[];
   demo_url: string | null;
   codebase_url: string | null;
 };

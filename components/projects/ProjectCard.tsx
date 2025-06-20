@@ -92,9 +92,9 @@ export function ProjectCard({
                 })}
             </ul>
           </CardContent>
-          <CardFooter>
-            <div className="flex justify-end gap-2">
-              <Button asChild variant="outline" size="sm">
+          <CardFooter className="py-6">
+            <div className="flex justify-end gap-3">
+              <Button asChild variant="default" size="sm">
                 <Link
                   href={demo_url || ""}
                   target="_blank"
