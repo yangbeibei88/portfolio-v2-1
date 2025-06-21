@@ -26,7 +26,7 @@ type ProjectImagesCarouselProps = {
   // activeIndex?: number;
 };
 
-function ProjectImagesCarousel({
+export function ProjectImagesCarousel({
   project_name,
   images,
   initialIndex = 0,
@@ -71,6 +71,25 @@ ProjectImagesCarouselProps) {
   // }, [mainApi, initialIndex]);
 
   // Handle dialog carousel thumbnail sync
+  // useEffect(() => {
+  //   if (!dialogApi) {
+  //     return;
+  //   }
+
+  //   const handleSelect = () => {
+  //     const newIndex = dialogApi.selectedScrollSnap();
+  //     setSelectedIndex(newIndex);
+  //     const thumb = dialogThumbRefs.current[newIndex];
+  //     thumb?.scrollIntoView({ behavior: "smooth", inline: "center" });
+  //   };
+
+  //   dialogApi.on("select", handleSelect);
+  //   dialogApi.scrollTo(selectedIndex); // sync on open
+
+  //   return () => {
+  //     dialogApi.off("select", handleSelect);
+  //   };
+  // }, [dialogApi, isDialogOpen]);
   useEffect(() => {
     if (!dialogApi) {
       return;
@@ -84,12 +103,18 @@ ProjectImagesCarouselProps) {
     };
 
     dialogApi.on("select", handleSelect);
-    dialogApi.scrollTo(selectedIndex); // sync on open
+    // dialogApi.scrollTo(selectedIndex); // sync on open
 
     return () => {
       dialogApi.off("select", handleSelect);
     };
-  }, [dialogApi, isDialogOpen]);
+  }, [dialogApi]);
+
+  useEffect(() => {
+    if (isDialogOpen && dialogApi) {
+      dialogApi.scrollTo(selectedIndex);
+    }
+  }, [isDialogOpen, dialogApi, selectedIndex]);
 
   const onThumbClick = useCallback(
     (index: number) => {
@@ -268,4 +293,4 @@ ProjectImagesCarouselProps) {
   );
 }
 
-export default memo(ProjectImagesCarousel);
+// export default memo(ProjectImagesCarousel);

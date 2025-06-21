@@ -17,10 +17,10 @@ type MainNavItemType = {
 };
 
 const mainNavItems: MainNavItemType[] = [
-  { name: "skills", href: "#skills" },
-  { name: "experience", href: "#experience" },
-  { name: "projects", href: "#projects" },
-  { name: "contact", href: "#contact" },
+  { name: "Skills", href: "#skills" },
+  { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export function MainNavMenu() {

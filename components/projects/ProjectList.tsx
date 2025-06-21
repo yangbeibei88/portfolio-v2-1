@@ -3,7 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export function ProjectList({ projects }: { projects: ProjectType[] }) {
   return (
-    <ul>
+    <ul className="flex flex-col gap-3">
       {projects.map((p) => {
         return (
           <ProjectCard

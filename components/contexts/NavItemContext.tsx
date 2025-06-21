@@ -45,8 +45,8 @@ export function NavItemScrollProvider({ children }: { children: ReactNode }) {
         }
       },
       {
-        rootMargin: "0px 0px -60% 0px",
-        threshold: 0.3,
+        rootMargin: "0px 0px -30% 0px",
+        threshold: 0.2,
       }
     );
     sectionsRef.current.forEach((ref) => {
@@ -55,7 +55,9 @@ export function NavItemScrollProvider({ children }: { children: ReactNode }) {
       }
     });
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return (

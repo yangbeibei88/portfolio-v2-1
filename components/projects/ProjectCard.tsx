@@ -8,12 +8,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { ProjectType } from "@/lib/types";
 import { stackMap } from "@/lib/utils/stackMap";
 import Link from "next/link";
 import Image from "next/image";
 import { BiLinkExternal, BiCodeAlt } from "react-icons/bi";
-import ProjectImagesCarousel from "./ProjectImagesCarousel";
+import { ProjectImagesCarousel } from "./ProjectImagesCarousel";
 
 type ProjectCardProps = Pick<
   ProjectType,
@@ -56,41 +57,52 @@ export function ProjectCard({
           </CardHeader>
           <CardContent>
             <p>{description}</p>
-            <h4 className="text-lg font-semibold">Key Features</h4>
-            <ul className="list-disc">
-              {key_features &&
-                key_features.map((k, idx) => <li key={idx}>{k}</li>)}
-            </ul>
-            <ul className="flex w-full flex-wrap gap-2">
-              {technologies &&
-                technologies.map((s) => {
-                  const tech = stackMap[s];
-                  if (!tech) {
-                    console.warn(`Unknown technology key: ${s}`);
-                    return null;
-                  }
-                  const IconComponent = tech.icon;
-                  return (
-                    <li
-                      key={s}
-                      className="flex items-center justify-center px-2 py-1 text-xs"
-                      style={{
-                        border: `${stackMap[s]["color"]} 1px solid`,
-                        borderRadius: "20px",
-                      }}
-                    >
-                      <IconComponent
-                        style={{
-                          color: stackMap[s]["color"] || "",
-                          backgroundColor:
-                            stackMap[s]["bgColor"] || "transparent",
-                        }}
-                      />
-                      {s}
-                    </li>
-                  );
-                })}
-            </ul>
+            <section className="py-2">
+              <h4 className="text-lg font-semibold">Key Features</h4>
+              <ul className="list-disc list-inside">
+                {key_features &&
+                  key_features.map((k, idx) => <li key={idx}>{k}</li>)}
+              </ul>
+            </section>
+            <section className="py-2">
+              <h4 className="text-lg font-semibold">Key Technologies</h4>
+              <ul className="flex w-full flex-wrap gap-2">
+                {technologies &&
+                  technologies.map((s) => {
+                    const tech = stackMap[s];
+                    if (!tech) {
+                      console.warn(`Unknown technology key: ${s}`);
+                      return null;
+                    }
+                    const IconComponent = tech.icon;
+                    return (
+                      // <li
+                      //   key={s}
+                      //   className="flex items-center justify-center px-2 py-1 text-xs"
+                      //   style={{
+                      //     border: `${stackMap[s]["color"]} 1px solid`,
+                      //     borderRadius: "20px",
+                      //   }}
+                      // >
+                      //   <IconComponent
+                      //     style={{
+                      //       color: stackMap[s]["color"] || "",
+                      //       backgroundColor:
+                      //         stackMap[s]["bgColor"] || "transparent",
+                      //     }}
+                      //   />
+                      //   {s}
+                      // </li>
+                      <li key={s}>
+                        <Badge variant="outline">
+                          <IconComponent />
+                          {s}
+                        </Badge>
+                      </li>
+                    );
+                  })}
+              </ul>
+            </section>
           </CardContent>
           <CardFooter className="py-6">
             <div className="flex justify-end gap-3">

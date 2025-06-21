@@ -17,7 +17,7 @@ export function SectionContainer({ id, children }: SectionContainerProps) {
   }, []);
 
   return (
-    <section id={id} ref={ref}>
+    <section id={id} ref={ref} className="scroll-mt-20">
       <div className="container mx-auto px-5 py-4">{children}</div>
     </section>
   );

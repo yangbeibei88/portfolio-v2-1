@@ -8,13 +8,16 @@ export function Logo() {
       href="/"
       className="grid place-items-center text-center rounded-full bg-slate-900 text-white hover:text-purple-400 w-12 h-12 transition-all duration-100"
     >
-      <Image
+      {/* <Image
         src="/assets/logo.svg#beibei_logo"
         alt={`${APP_NAME} logo`}
         width={24}
         height={24}
         unoptimized
-      />
+      /> */}
+      <svg className="w-6 h-6 fill-current" aria-label={`${APP_NAME} logo`}>
+        <use href="/assets/logo.svg#beibei_logo" />
+      </svg>
     </Link>
   );
 }
