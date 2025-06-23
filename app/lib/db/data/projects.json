@@ -96,7 +96,7 @@
       }
     ],
     "demo_url": "https://tshirtgrind.beibeiyang.app/",
-    "codebase_url": "",
+    "codebase_url": "https://github.com/yangbeibei88/tshirt-grind",
     "description": "An e-commerce platform built with WordPress for a custom t-shirt business. The site supports full online shopping functionalities and custom plugin development.",
     "key_features": [
       "Developed a fully custom WordPress theme from scratch.",
@@ -176,7 +176,7 @@
       }
     ],
     "demo_url": "https://themobilehour.beibeiyang.app/",
-    "codebase_url": "https://github.com/yangbeibei88/tshirt-grind",
+    "codebase_url": "https://github.com/yangbeibei88/themobilehour",
     "description": "A dynamic PHP-based CRUD system for managing mobile phone product listings, categories, and user access via a custom-built admin panel.",
     "key_features": [
       "Developed a custom MVC framework from scratch using object-oriented PHP.",
