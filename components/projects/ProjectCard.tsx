@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import {
   Card,
-  CardAction,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -12,9 +10,8 @@ import { Badge } from "@/components/ui/badge";
 import { ProjectType } from "@/lib/types";
 import { stackMap } from "@/lib/utils/stackMap";
 import Link from "next/link";
-import Image from "next/image";
 import { BiLinkExternal, BiCodeAlt } from "react-icons/bi";
-import { ProjectImagesCarousel } from "./ProjectImagesCarousel";
+import ProjectImagesCarousel from "./ProjectImagesCarousel";
 
 type ProjectCardProps = Pick<
   ProjectType,

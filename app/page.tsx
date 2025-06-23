@@ -10,7 +10,7 @@ export default async function HomePage() {
   const experiences = await getExperiences();
   const projects = await getProjects();
   return (
-    <div className="w-full p-4 flex-1 pt-[70px]">
+    <div className="w-full flex-1 pt-[72px]">
       <HeaderHero />
       <main>
         <SkillsSection skills={skills} />

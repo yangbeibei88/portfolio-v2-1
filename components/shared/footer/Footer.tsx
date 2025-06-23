@@ -1,6 +1,4 @@
 import { APP_AUTHOR } from "@/lib/constants";
-import Link from "next/link";
-import { GithubLink, LinkedinLink } from "../topNav/socialLinks";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();

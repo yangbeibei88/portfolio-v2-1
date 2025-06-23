@@ -34,7 +34,7 @@ export function MainNavMenu() {
           return (
             <NavigationMenuItem key={item.name}>
               <NavigationMenuLink asChild active={isActive}>
-                <Link
+                <a
                   href={item.href}
                   className={clsx(
                     "transition-colors",
@@ -44,7 +44,7 @@ export function MainNavMenu() {
                   )}
                 >
                   {item.name}
-                </Link>
+                </a>
               </NavigationMenuLink>
             </NavigationMenuItem>
           );

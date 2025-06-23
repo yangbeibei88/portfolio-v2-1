@@ -14,7 +14,7 @@ export function SectionContainer({ id, children }: SectionContainerProps) {
 
   useEffect(() => {
     registerSection(id, ref);
-  }, []);
+  }, [id, registerSection]);
 
   return (
     <section id={id} ref={ref} className="scroll-mt-20">

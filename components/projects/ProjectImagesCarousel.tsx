@@ -11,13 +11,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-  DialogClose,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
 type ProjectImagesCarouselProps = {
   project_name: string;
@@ -26,7 +20,7 @@ type ProjectImagesCarouselProps = {
   // activeIndex?: number;
 };
 
-export function ProjectImagesCarousel({
+function ProjectImagesCarousel({
   project_name,
   images,
   initialIndex = 0,
@@ -38,6 +32,7 @@ ProjectImagesCarouselProps) {
   const [dialogApi, setDialogApi] = useState<CarouselApi>();
   const thumbRefs = useRef<(HTMLDivElement | null)[]>([]);
   const dialogThumbRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const hasMounted = useRef(false);
 
   // Handle main carousel thumbnail sync
   useEffect(() => {
@@ -48,48 +43,29 @@ ProjectImagesCarouselProps) {
     const handleSelect = () => {
       const newIndex = mainApi.selectedScrollSnap();
       setSelectedIndex(newIndex);
-      const currentThumb = thumbRefs.current[newIndex];
-      currentThumb?.scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-        inline: "center",
-      });
+
+      if (hasMounted.current) {
+        const currentThumb = thumbRefs.current[newIndex];
+        currentThumb?.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "center",
+        });
+      }
     };
 
     mainApi.on("select", handleSelect);
+    // initial call (scroll suppressed)
     handleSelect();
+
+    hasMounted.current = true;
 
     return () => {
       mainApi.off("select", handleSelect);
     };
   }, [mainApi]);
 
-  // useEffect(() => {
-  //   if (mainApi) {
-  //     mainApi.scrollTo(initialIndex);
-  //   }
-  // }, [mainApi, initialIndex]);
-
-  // Handle dialog carousel thumbnail sync
-  // useEffect(() => {
-  //   if (!dialogApi) {
-  //     return;
-  //   }
-
-  //   const handleSelect = () => {
-  //     const newIndex = dialogApi.selectedScrollSnap();
-  //     setSelectedIndex(newIndex);
-  //     const thumb = dialogThumbRefs.current[newIndex];
-  //     thumb?.scrollIntoView({ behavior: "smooth", inline: "center" });
-  //   };
-
-  //   dialogApi.on("select", handleSelect);
-  //   dialogApi.scrollTo(selectedIndex); // sync on open
-
-  //   return () => {
-  //     dialogApi.off("select", handleSelect);
-  //   };
-  // }, [dialogApi, isDialogOpen]);
+  // handle dialog thumbnails sync
   useEffect(() => {
     if (!dialogApi) {
       return;
@@ -110,6 +86,7 @@ ProjectImagesCarouselProps) {
     };
   }, [dialogApi]);
 
+  // When opening dialog, scroll to selected
   useEffect(() => {
     if (isDialogOpen && dialogApi) {
       dialogApi.scrollTo(selectedIndex);
@@ -133,73 +110,70 @@ ProjectImagesCarouselProps) {
   return (
     <div className="flex flex-col space-y-2 w-full">
       {/* Main Carousel */}
-      <div className="">
-        <Carousel
-          className="w-full overflow-hidden"
-          setApi={setMainApi}
-          opts={{ loop: true }}
-        >
-          <CarouselContent className="">
-            {images.map((img) => (
-              <CarouselItem
-                key={img.position}
-                className="w-full max-h-[300px] flex justify-center items-start"
-              >
-                <Image
-                  width={1024}
-                  height={686.4}
-                  src={img.image_path || "/assets/image_placeholder_2.jpg"}
-                  alt={
-                    `${project_name} - ${img.image_desc}` ||
-                    `${project_name} image`
-                  }
-                  priority={true}
-                  className="w-full max-h-full object-contain cursor-zoom-in"
-                  onClick={() => setIsDialogOpen(true)}
-                />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="left-2 opacity-50" />
-          <CarouselNext className="right-2 opacity-50" />
-        </Carousel>
-      </div>
-      {/* Carousel thumbnail navigation */}
-      <nav className="mt-2">
-        <Carousel className="w-full">
-          <CarouselContent className="flex flex-row flex-nowrap gap-2 overflow-x-auto ml-0 px-2">
-            {images.map((img, idx) => (
-              <CarouselItem
-                key={img.position}
-                onClick={() => onThumbClick(idx)}
-                className={`basis-auto cursor-pointer border flex-shrink-0 ml-0 pl-0 ${
-                  idx === selectedIndex ? "border-blue-500" : "border-gray-300"
-                }`}
-              >
-                <div
-                  ref={(el) => {
-                    thumbRefs.current[idx] = el;
-                  }}
-                >
-                  <Image
-                    width={120}
-                    height={120}
-                    src={img.image_path || "/assets/image_placeholder_2.jpg"}
-                    alt={
-                      `${project_name} - ${img.image_desc}` ||
-                      `${project_name} image`
-                    }
-                    priority={true}
-                    className="size-[120px] p-1 border object-cover"
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
+      <Carousel
+        className="w-full overflow-hidden"
+        setApi={setMainApi}
+        opts={{ loop: true }}
+      >
+        <CarouselContent className="">
+          {images.map((img) => (
+            <CarouselItem
+              key={img.position}
+              className="w-full max-h-[300px] flex justify-center items-start"
+            >
+              <Image
+                width={1024}
+                height={686.4}
+                src={img.image_path || "/assets/image_placeholder_2.jpg"}
+                alt={
+                  `${project_name} - ${img.image_desc}` ||
+                  `${project_name} image`
+                }
+                priority={true}
+                className="w-full max-h-full object-contain cursor-zoom-in"
+                onClick={() => setIsDialogOpen(true)}
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        {images.length > 1 && (
+          <>
+            <CarouselPrevious className="left-2 opacity-50" />
+            <CarouselNext className="right-2 opacity-50" />
+          </>
+        )}
+      </Carousel>
+
+      {/* Thumbnail Nav: Horizontally scrollable only */}
+      <nav className="mt-2 overflow-x-auto whitespace-nowrap">
+        <div className="flex flex-row flex-nowrap gap-2 px-2">
+          {images.map((img, idx) => (
+            <div
+              key={img.position}
+              ref={(el) => {
+                thumbRefs.current[idx] = el;
+              }}
+              onClick={() => onThumbClick(idx)}
+              className={`cursor-pointer border flex-shrink-0 ${
+                idx === selectedIndex ? "border-blue-500" : "border-gray-300"
+              }`}
+            >
+              <Image
+                width={120}
+                height={120}
+                src={img.image_path || "/assets/image_placeholder_2.jpg"}
+                alt={
+                  `${project_name} - ${img.image_desc}` ||
+                  `${project_name} image`
+                }
+                className="size-[120px] p-1 border object-cover"
+              />
+            </div>
+          ))}
+        </div>
       </nav>
-      {/* w-screen h-screen max-w-none p-0 */}
-      {/* Dialog with Main Carousel + Thumbnails */}
+
+      {/* Dialog with large carousel */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent
           // !max-w-7xl
@@ -230,62 +204,53 @@ ProjectImagesCarouselProps) {
                           `${project_name} - ${img.image_desc}` ||
                           `${project_name} image`
                         }
-                        // max-h-[80vh] max-w-[90vw] object-contain
                         className="max-h-[70vh] max-w-[90vw] object-contain"
                       />
                       <figcaption className="text-muted-foreground py-2 text-center text-sm">
                         {`${project_name} - ${img.image_desc}`}
                       </figcaption>
                     </figure>
-                    {/* <div className="w-full h-full flex justify-center items-center">
-                  </div> */}
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="" />
-              <CarouselNext className="" />
+              {images.length > 1 && (
+                <>
+                  <CarouselPrevious className="left-4" />
+                  <CarouselNext className="right-4" />
+                </>
+              )}
             </Carousel>
           </div>
-          {/* <div className="w-full h-full flex flex-col items-center justify-center px-4">
-          </div> */}
-          {/* Dialog thumbnails */}
 
-          <nav
-            // mt-2
-            className="w-full"
-          >
-            <Carousel className="w-full">
-              <CarouselContent className="flex flex-row flex-nowrap gap-2 overflow-x-auto ml-0 px-2">
-                {images.map((img, idx) => (
-                  <CarouselItem
-                    key={img.position}
-                    onClick={() => onDialogThumbClick(idx)}
-                    className={`basis-auto cursor-pointer border flex-shrink-0 pl-0 ${
-                      idx === selectedIndex
-                        ? "border-blue-500"
-                        : "border-gray-300"
-                    }`}
-                  >
-                    <div
-                      ref={(el) => {
-                        dialogThumbRefs.current[idx] = el;
-                      }}
-                    >
-                      <Image
-                        width={160}
-                        height={160}
-                        src={img.image_path}
-                        alt={
-                          `${project_name} - ${img.image_desc}` ||
-                          `${project_name} image`
-                        }
-                        className="size-[160px] p-1 border object-contain m-auto"
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
+          {/* Dialog Thumbnails */}
+          <nav className="w-full overflow-x-auto overflow-y-hidden whitespace-nowrap">
+            <div className="flex flex-row gap-2 px-2">
+              {images.map((img, idx) => (
+                <div
+                  key={img.position}
+                  ref={(el) => {
+                    dialogThumbRefs.current[idx] = el;
+                  }}
+                  onClick={() => onDialogThumbClick(idx)}
+                  className={`cursor-pointer border flex-shrink-0 ${
+                    idx === selectedIndex
+                      ? "border-blue-500"
+                      : "border-gray-300"
+                  }`}
+                >
+                  <Image
+                    width={100}
+                    height={100}
+                    src={img.image_path}
+                    alt={
+                      `${project_name} - ${img.image_desc}` ||
+                      `${project_name} image`
+                    }
+                    className="size-[100px] p-1 border object-contain"
+                  />
+                </div>
+              ))}
+            </div>
           </nav>
         </DialogContent>
       </Dialog>
@@ -293,4 +258,4 @@ ProjectImagesCarouselProps) {
   );
 }
 
-// export default memo(ProjectImagesCarousel);
+export default memo(ProjectImagesCarousel);

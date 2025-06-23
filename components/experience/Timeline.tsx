@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { TimelineItem } from "./TimelineItem";
 import { ExperienceType } from "@/lib/types";
 

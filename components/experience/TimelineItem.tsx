@@ -39,9 +39,7 @@ export function TimelineItem({
         <small className="font-mono">
           {startDate} - {endDate}
         </small>
-        <Badge
-          className={`${type === "work" ? "bg-neutral-900" : "bg-indigo-700"}`}
-        >
+        <Badge className={`${type === "work" ? "bg-accent" : "bg-primary"}`}>
           {type}
         </Badge>
       </div>
