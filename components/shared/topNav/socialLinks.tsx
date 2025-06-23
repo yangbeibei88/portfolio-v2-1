@@ -35,7 +35,7 @@ export function LinkedinLink() {
   return (
     <Button asChild variant="secondary" size="icon" className="size-8">
       <Link
-        href="https://linkedin.com/beibeiyang"
+        href="https://www.linkedin.com/in/beibei-yang/"
         target="_blank"
         rel="noreferrer noopener"
         aria-label="Open on Linkedin"
