@@ -11,14 +11,13 @@ export function HeaderHero() {
         </h2>
         <hr />
         <p>
-          I am a fullstack TypeScript developer passionate about TypeSafe and
-          performant code. I&apos;m a passionate full-stack web developer
-          specialising in creating robust, scalable, and database-driven
-          applications. Leveraging TypeScript, React, NodeJS, and
-          relational/NoSQL databases, I build solutions where the database
-          serves as a reliable single source of truth. With experience spanning
-          business systems, custom applications, and modern web technologies, I
-          bring efficiency and reliability to every project I work on.
+          I am a full-stack TypeScript web developer specialising in creating
+          robust, scalable, and database-driven applications. Leveraging
+          TypeScript, React, NodeJS, and relational/NoSQL databases, I build
+          solutions where the database serves as a reliable single source of
+          truth. With experience spanning business systems, custom applications,
+          and modern web technologies, I bring efficiency and reliability to
+          every project I work on.
         </p>
       </div>
     </SectionContainer>
