@@ -29,7 +29,7 @@ export function MobileNav() {
 
       <SheetContent side="right" className="p-6">
         <SheetHeader className="text-center">
-          <SheetTitle>Beibei's Portfolio</SheetTitle>
+          <SheetTitle>Beibei&apos;s Portfolio</SheetTitle>
           <SheetDescription>Mobile Menu</SheetDescription>
         </SheetHeader>
         <div className="flex flex-col gap-6 items-center justify-center">
