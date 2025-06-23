@@ -4,7 +4,7 @@ import { WaveGreeting } from "./Greeting";
 export function HeaderHero() {
   return (
     <SectionContainer id="portfolio-hero">
-      <div className="w-2/3" id="short_intro">
+      <div className="md:w-2/3" id="short_intro">
         <WaveGreeting />
         <h2 className="text-2xl font-semibold">
           Fullstack Web Developer - focusing on TypeScript and React

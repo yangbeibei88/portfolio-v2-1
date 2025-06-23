@@ -22,7 +22,11 @@ const mainNavItems: MainNavItemType[] = [
   { name: "Contact", href: "#contact" },
 ];
 
-export function MainNavMenu() {
+type MainNavMenuProps = {
+  onItemClick?: () => void;
+};
+
+export function MainNavMenu({ onItemClick }: MainNavMenuProps) {
   const { activeMenuItemId } = useNavItemScroll();
   return (
     <NavigationMenu>
@@ -35,6 +39,7 @@ export function MainNavMenu() {
               <NavigationMenuLink asChild active={isActive}>
                 <a
                   href={item.href}
+                  onClick={onItemClick}
                   className={clsx(
                     "transition-colors",
                     isActive
