@@ -20,9 +20,11 @@
     "description": "",
     "desc_array": [
       "Maintained and enhanced company B2B websites, with a focus on updating frontend code and implementing UI improvements.",
-      "Worked with Pronto ERP for operational tasks, including data analysis and reporting using Pronto Cognos.",
-      "Developed internal tools and workflow automation using Microsoft PowerApps and Power Automate, improving process efficiency; Created and maintained SharePoint-based knowledge management systems to streamline internal documentation and information sharing.",
-      "Designed digital and printed marketing materials such as posters, catalogues, and brochures using Adobe and Canva, supporting the company's branding and promotional efforts."
+      "Used Pronto ERP for operational tasks, including sales, CRM, and inventory data analysis, as well as reporting to support business decision-making.",
+      "Developed internal tools and workflow automation using Microsoft PowerApps and Power Automate, improving process efficiency.",
+      "Created and maintained SharePoint-based knowledge management systems to streamline internal documentation and cross-departmental information sharing.",
+      "Designed and delivered personalised EDM campaigns, using customer segments derived from CRM and sales data to increase engagement and drive repeat business.",
+      "Collaborated with external technology vendors to ideate digital solutions, troubleshoot technical issues, and implement improvements within business constraints."
     ],
     "location": "Gold Coast, QLD"
   },
@@ -46,9 +48,12 @@
     "ended_at": "2018-01-01",
     "description": "",
     "desc_array": [
-      "Designed, developed, and managed the business WordPress website, customising themes and regularly updating content.",
-      "Designed and implemented database schemas for order and customer management systems, ensuring data consistency and scalability.",
-      "Built and customised Zoho Creator applications using Deluge scripts, implementing complex business logic to streamline company processes."
+      "Designed and maintained WordPress-based web platforms, including theme customisation, plugin integration, and content updates to support marketing and customer engagement.",
+      "Designed implemented relational database schemas and implemented order and customer management systems, enabling efficient business operations and accurate record-keeping.",
+      "Built and customised SaaS applications to automate workflows, streamline operations, and support inter-departmental processes.",
+      "Conducted sales data analysis to assist the sales team with performance tracking, territory targeting, and opportunity identification.",
+      "Collaborated with the engineering team to document technical specifications and write clear, user-focused product manuals and guides.",
+      "Worked with both sales and engineering teams to design system solutions for client needs, ensuring alignment with business goals and technical feasibility."
     ],
     "location": "Shanghai, China"
   },

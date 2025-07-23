@@ -1,20 +1,26 @@
 [
   {
     "id": 1,
-    "skill_name": "Web Development",
-    "description": "As a full-stack developer, I specialise in crafting responsive, dynamic, and intuitive user interfaces with React and TypeScript, paired with scalable backend runtime NodeJS/Deno. My development process emphasises clean architecture, reusable components, and performance optimization — resulting in applications that are as efficient as they are user-friendly.",
+    "skill_name": "Web & Systems Development",
+    "description": "As a full-stack developer, I build responsive, scalable web applications using React, TypeScript, and NodeJS. My work emphasises clean architecture and performance, while also aligning closely with business needs and user goals.",
     "icon": "FaCode"
   },
   {
     "id": 2,
-    "skill_name": "Database Management",
-    "description": "With expertise in relational databases such as PostgreSQL and MySQL, as well as experience with NoSQL platforms like MongoDB, I design optimized database schemas and manage data efficiently to ensure consistency, reliability, and high performance in web applications.",
+    "skill_name": "Database & Information Management",
+    "description": "With expertise in relational databases (PostgreSQL and MySQL), as well as experience with NoSQL (MongoDB), I design efficient and reliable database schemas that support clean data structure and integrity, which is a crucial foundation for analysis, reporting and high performance in applications.",
     "icon": "FaDatabase"
   },
   {
     "id": 3,
-    "skill_name": "API development",
-    "description": "I design and develop RESTful APIs using NodeJS/Deno, ensuring seamless communication between the client and server. My APIs are robust, scalable, and thoroughly tested, forming the backbone of reliable and efficient web applications.",
+    "skill_name": "System Integration & Automation",
+    "description": "I develop and maintain REST APIs, automate processes with tools (e.g. Power Automate, Zapier), and support both internal and external systems — helping businesses reduce manual work and improve data flow.",
     "icon": "AiFillApi"
+  },
+  {
+    "id": 4,
+    "skill_name": "Data Analysis & Digital Operations",
+    "description": "With experience in reporting tools (Power BI, Excel) and ERP platforms (e.g. Pronto), I support decision-making through data extraction, cleaning, and insights generation, particularly in sales, CRM, and product operations.",
+    "icon": "FaChartBar"
   }
 ]

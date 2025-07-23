@@ -1,4 +1,5 @@
 import { FaCode, FaDatabase } from "react-icons/fa6";
+import { FaChartBar } from "react-icons/fa";
 import { AiFillApi } from "react-icons/ai";
 import { LucideIcon, CodeXml, Unplug, Database } from "lucide-react";
 import { IconType } from "react-icons";
@@ -10,4 +11,5 @@ export const iconMap: Record<string, IconType | LucideIcon> = {
   CodeXml,
   Unplug,
   Database,
+  FaChartBar,
 };

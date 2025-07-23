@@ -28,9 +28,15 @@ export function ContactCard() {
           </span>
         </address>
       </CardContent>
-      <CardFooter className="flex gap-2 items-center justify-center">
-        <GithubLink />
-        <LinkedinLink />
+      <CardFooter className="flex flex-col gap-2 items-center justify-center">
+        <div className="flex gap-2 items-center justify-center">
+          <GithubLink />
+          <LinkedinLink />
+        </div>
+        <mark>
+          Open to opportunities in web development, digital systems, analyst
+          roles, and operations improvement.
+        </mark>
       </CardFooter>
     </Card>
   );
