@@ -34,8 +34,8 @@ export function ContactCard() {
           <LinkedinLink />
         </div>
         <mark>
-          Open to opportunities in web development, digital systems, analyst
-          roles, and operations improvement.
+          Open to opportunities in web development, database management, digital
+          systems, and ICT related roles.
         </mark>
       </CardFooter>
     </Card>
