@@ -1,5 +1,22 @@
 [
   {
+    "id": 0,
+    "org": "Freelancer",
+    "position": "Fullstack Web Developer",
+    "type": "work",
+    "started_at": "2025-03-01",
+    "ended_at": null,
+    "description": "",
+    "desc_array": [
+      "Designed and developed full-stack web applications for small businesses and personal clients using the React and NodeJS stack.",
+      "Built scalable database architectures using PostgreSQL and MySQL, with a focus on data integrity and system performance.",
+      "Delivered custom CMS, sales and inventory tools, and API-integrated dashboards to meet diverse business requirements.",
+      "Provided end-to-end support, including domain and hosting setup, DNS configuration, and Git version control.",
+      "Collaborated directly with clients to define scope, iterate on features, and deliver responsive, accessible UI designs."
+    ],
+    "location": "Gold Coast, QLD"
+  },
+  {
     "id": 1,
     "org": "TAFE QLD",
     "position": "Frontend and backend web development",
