@@ -2,17 +2,19 @@
   {
     "id": 0,
     "org": "Freelancer",
-    "position": "Fullstack Web Developer",
+    "position": "Fullstack Web Developer & Digital Systems Consultant",
     "type": "work",
     "started_at": "2025-03-01",
     "ended_at": null,
     "description": "",
     "desc_array": [
-      "Designed and developed full-stack web applications for small businesses and personal clients using the React and NodeJS stack.",
-      "Built scalable database architectures using PostgreSQL and MySQL, with a focus on data integrity and system performance.",
-      "Delivered custom CMS, sales and inventory tools, and API-integrated dashboards to meet diverse business requirements.",
-      "Provided end-to-end support, including domain and hosting setup, DNS configuration, and Git version control.",
-      "Collaborated directly with clients to define scope, iterate on features, and deliver responsive, accessible UI designs."
+      "Designed and delivered business productivity solutions for small business clients, with a focus on Microsoft 365 administration, SharePoint configuration, and workflow automation to streamline operations.",
+      "Built and maintained relational database architectures, ensuring data integrity, performance optimisation, and secure access across integrated systems.",
+      "Configured and managed application environments including domains, hosting, DNS, and security settings to support reliable system operations.",
+      "Developed and deployed user-friendly web applications to meet client requirements, with emphasis on usability, accessibility, and performance.",
+      "Led end-to-end project delivery from requirements analysis and scoping through to testing, deployment, and user training, ensuring solutions aligned with business objectives.",
+      "Produced system documentation and delivered training sessions, increasing adoption rates and reducing ongoing support requests.",
+      "Provided ongoing application administration and support, including updates, troubleshooting, and vendor liaison for escalated technical issues."
     ],
     "location": "Gold Coast, QLD"
   },

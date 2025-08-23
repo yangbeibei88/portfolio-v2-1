@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn, FaStrava } from "react-icons/fa6";
 import Link from "next/link";
 
 // const githubIcon = (
@@ -41,6 +41,21 @@ export function LinkedinLink() {
         aria-label="Open on Linkedin"
       >
         <FaLinkedinIn />
+      </Link>
+    </Button>
+  );
+}
+
+export function StravaLink() {
+  return (
+    <Button asChild variant="secondary" size="icon" className="size-8">
+      <Link
+        href="https://www.strava.com/athletes/166302236"
+        target="_blank"
+        rel="noreferrer noopener"
+        aria-label="Open on Strava"
+      >
+        <FaStrava />
       </Link>
     </Button>
   );

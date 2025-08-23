@@ -6,7 +6,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
-import { GithubLink, LinkedinLink } from "../shared/topNav/socialLinks";
+import {
+  GithubLink,
+  LinkedinLink,
+  StravaLink,
+} from "../shared/topNav/socialLinks";
 
 export function ContactCard() {
   return (
@@ -32,6 +36,7 @@ export function ContactCard() {
         <div className="flex gap-2 items-center justify-center">
           <GithubLink />
           <LinkedinLink />
+          <StravaLink />
         </div>
         <mark>
           Open to opportunities in web development, database management, digital
